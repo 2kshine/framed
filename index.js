@@ -14,7 +14,7 @@ const cors = require("cors");
 //Importing Routes
 const userRoute = require("./routes/userRoute")
 const authRoute = require("./routes/authRoute")
-
+const postRoute = require("./routes/postRoute")
 //Initializing application
 const app = express();
 
@@ -38,6 +38,7 @@ app.use(express.json());
 //Routes
 app.use("/api/v1/user", userRoute)
 app.use("/api/v1/auth", authRoute)
+app.use("/api/v1/post", postRoute)
 //connecting to the database and starting server
 mongoose
   .connect(MONGO_URI, {

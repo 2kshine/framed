@@ -27,6 +27,6 @@ router.get("/:id", postController.getPost)
 
 // @desc Get a Timeline Post
 // @route /timeling
-router.post("/:id/timeline", postController.timelinePost)
+router.get("/timeline/all", postController.timelinePost)
 
 module.exports = router;

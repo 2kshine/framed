@@ -1,0 +1,93 @@
+.navbarContainer{
+    height: 60px;
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+}
+.logo{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    color: skyblue;
+    letter-spacing: 12px;
+    cursor: grab;
+    padding-left: 20px;
+}
+.logo:active{
+    cursor: grabbing;
+}
+.searchbar {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.searchInput{
+    width: 90%;
+    height: 95%;
+    text-decoration: none;
+    border: none;
+    cursor: text !important;
+    outline: none;
+}
+
+/* allocating screen flex */
+.navbarLeft{
+    flex: 2;
+}
+.navbarCenter{
+    flex: 5;
+}
+.navbarRight{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+
+}
+.navbarLinks{
+    font-size:1.2em;
+    cursor:pointer;
+}
+.navbarLink{
+    font-size: .9em !important; 
+    padding:10px;
+}
+.navbarIcons{
+    display: flex;
+}
+.navIconItem{
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+    padding: 5px;
+}
+.navbarIconBadge{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+.navbarImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}

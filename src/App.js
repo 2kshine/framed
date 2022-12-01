@@ -4,7 +4,7 @@ import Home from "./pages/home/home.jsx";
 import { library } from '@fortawesome/fontawesome-svg-core'
 function App() {
   return (
-    <Navbar />
+    <Home />
   );
 }
 

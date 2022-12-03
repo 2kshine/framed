@@ -1,0 +1,41 @@
+.ranking{
+    padding: 4px 4px;
+}
+.rankingTitle{
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px #000000;
+    padding-bottom: 10px;
+}
+.rankingWrapper{
+    width: 95%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 16px 7px 12px 19px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 4px 13px -7px #000000;
+}
+.rankingBox{
+    display: flex;
+    flex-direction: column;
+}
+.topPart{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+.bottomPart{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+.uploadTime{
+    font-size: small;
+    color: grey;
+}
+.donationButton {
+    border-radius: 10px;
+    color: white;
+    background-color: red;
+}

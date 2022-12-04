@@ -1,4 +1,6 @@
 import React from "react";
+import { Users } from "../../dummyData";
+import Friend from "../friends/friends";
 import "./leftbar.css";
 
 const Leftbar = () => {
@@ -35,102 +37,9 @@ const Leftbar = () => {
         <div className="leftbarpart2">
           <h3>Your Friends</h3>
           <ul className="leftbarFriendList">
-            <li className="leftbarFriend">
-              <img
-                src="/assets/person/2.jpeg"
-                alt=""
-                className="leftbarFriendImg"
-              />
-              <span className="leftbarFriendName">jane Doe</span>
-            </li>
-            <li className="leftbarFriend">
-              <img
-                src="/assets/person/2.jpeg"
-                alt=""
-                className="leftbarFriendImg"
-              />
-              <span className="leftbarFriendName">jane Doe</span>
-            </li>
-            <li className="leftbarFriend">
-              <img
-                src="/assets/person/2.jpeg"
-                alt=""
-                className="leftbarFriendImg"
-              />
-              <span className="leftbarFriendName">jane Doe</span>
-            </li>
-            <li className="leftbarFriend">
-              <img
-                src="/assets/person/2.jpeg"
-                alt=""
-                className="leftbarFriendImg"
-              />
-              <span className="leftbarFriendName">jane Doe</span>
-            </li>
-            <li className="leftbarFriend">
-              <img
-                src="/assets/person/2.jpeg"
-                alt=""
-                className="leftbarFriendImg"
-              />
-              <span className="leftbarFriendName">jane Doe</span>
-            </li>
-            <li className="leftbarFriend">
-              <img
-                src="/assets/person/2.jpeg"
-                alt=""
-                className="leftbarFriendImg"
-              />
-              <span className="leftbarFriendName">jane Doe</span>
-            </li>
-            <li className="leftbarFriend">
-              <img
-                src="/assets/person/2.jpeg"
-                alt=""
-                className="leftbarFriendImg"
-              />
-              <span className="leftbarFriendName">jane Doe</span>
-            </li>
-            <li className="leftbarFriend">
-              <img
-                src="/assets/person/2.jpeg"
-                alt=""
-                className="leftbarFriendImg"
-              />
-              <span className="leftbarFriendName">jane Doe</span>
-            </li>
-            <li className="leftbarFriend">
-              <img
-                src="/assets/person/2.jpeg"
-                alt=""
-                className="leftbarFriendImg"
-              />
-              <span className="leftbarFriendName">jane Doe</span>
-            </li>
-            <li className="leftbarFriend">
-              <img
-                src="/assets/person/2.jpeg"
-                alt=""
-                className="leftbarFriendImg"
-              />
-              <span className="leftbarFriendName">jane Doe</span>
-            </li>
-            <li className="leftbarFriend">
-              <img
-                src="/assets/person/2.jpeg"
-                alt=""
-                className="leftbarFriendImg"
-              />
-              <span className="leftbarFriendName">jane Doe</span>
-            </li>
-            <li className="leftbarFriend">
-              <img
-                src="/assets/person/2.jpeg"
-                alt=""
-                className="leftbarFriendImg"
-              />
-              <span className="leftbarFriendName">jane Doe</span>
-            </li>
+            {Users.map((props) => (
+              <Friend key={props.key} props={props}/>
+            ))}
           </ul>
         </div>
       </div>

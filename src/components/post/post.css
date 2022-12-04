@@ -60,10 +60,19 @@
     width: 25px;
     height: 25px;
     margin-right: 5px;
-    cursor:pointer
+    cursor:pointer;
+    transition: transform .6s;
+}
+.likeIcon:hover{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    transform: scale(1.5)
 }
 .postLikeCounter{
     font-size: 15px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 .postCommentText{
     cursor: pointer;
